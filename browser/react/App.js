@@ -10,6 +10,7 @@ import SearchBar from './SearchBar';
 import Transactions from './Transactions';
 import SingleStock from './SingleStock';
 import initialState from './initialState';
+import SuggestedStocks from './SuggestedStocks';
 
 const socket = io(window.location.origin);
 let clientIP = '';
@@ -117,24 +118,26 @@ class App extends Component{
 
 	render(){
 	// console.log('.....in App.js, state, props',this.state, this.props)
-
+		const transactions = [...this.state.transactions, ...this.state.services]
 		return(
 			<div className="container-fluid">
 				<Nav />
 				<div style={ { marginTop: '65px' }}>
-					<SearchBar searchActive={ this.searchActive }/>
 						<div className="row">
-							<div className="col-sm-2">
-								<FilterBar filterActive={ this.filterActive } />
-							</div>
-							<div className="col-sm-6">
+
+							<div className="col-sm-4">
 							{ Object.keys( this.props ).length > 1 ?
-								<Transactions searchFlag = { this.state.search } reset={ this.reset } transactions = { this.state.transactions } />
+								<Transactions searchFlag = { this.state.search } reset={ this.reset } transactions = { transactions } services = { this.state.services }/>
 								: <SingleStock router = { this.props.router }/> }
+							</div>
+
+							<div className="col-sm-4">
+								<SuggestedStocks companies={ this.state.companies }/>
 							</div>
 							<div className="col-sm-4">
 								<InvestorAllocation allocationPercents={ this.state.allocationPercents } selectedAllocation={ this.state.selectedAllocation } selectAllocationPercent={ this.selectAllocationPercent }/>
 							</div>
+
 						</div>
 				</div>
 			</div>

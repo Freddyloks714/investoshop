@@ -22,11 +22,11 @@ class Nav extends React.Component {
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav">
                 <li>
-                  <a href="#">Portfolio</a>
+                  <a href="#">My Portfolio</a>
                 </li>
                 <li className="divider" />
                 <li>
-                  <a href="https://github.com/wfgmiami/investoshop">Github</a>
+                  <a href="#">My Budget</a>
                 </li>
                 <li>
 

@@ -45,7 +45,7 @@ createNewObject = ( arr ) => {
 	arr.forEach( transaction => {
 		obj.amount = transaction.amount;
 		obj.category = transaction.category;
-		obj.companyName = transaction.name;
+		obj.name = transaction.name;
 		obj.purchaseDate = transaction.date;
 		transactions.push(obj)
 		obj= {};
