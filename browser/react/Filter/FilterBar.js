@@ -2,8 +2,7 @@ import React from 'react';
 import FilterGroup from './FilterGroup';
 import { createNewFilter } from './modfilter';
 
-let category = ['Consumer Services', 'Finance', 'Technology', 'Public Utilities',
-'Capital Goods', 'Basic Industries', 'Health Care', 'Energy', 'Transportation', 'Miscellaneous','Consumer Non-Durables'];
+let category = ['Daily','Weekly','Monthly','Quarterly','Yearly'];
 category = category.sort();
 
 class FilterBar extends React.Component {
@@ -26,7 +25,7 @@ class FilterBar extends React.Component {
   render() {
 
     const categories = [
-      { name: 'sector', title: 'Sector', category },
+      { name: 'date', title: 'Time Period', category },
     ];
 
     return (

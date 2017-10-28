@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Nav from './Nav';
-import Main from './Main';
+import InvestorAllocation from './InvestorAllocation';
 import MsgBox from './MsgBox';
 import FilterBar from './Filter/FilterBar';
 import SearchBar from './SearchBar';
-import StocksList from './StocksList';
+import Transactions from './Transactions';
 import SingleStock from './SingleStock';
+import initialState from './initialState';
 
 const socket = io(window.location.origin);
 let clientIP = '';
@@ -22,21 +23,17 @@ class App extends Component{
 	constructor( props ){
 		super( props );
 
-		this.state = {
-			msgs:[],
-			nasdaq:[],
-			quote:[],
-			search:''
-		}
+		this.state = initialState;
+
 		this.reset = this.reset.bind(this);
 		this.searchActive = this.searchActive.bind(this);
 		this.filterActive = this.filterActive.bind(this);
 		this.onMessageSubmit = this.onMessageSubmit.bind(this);
+		this.selectAllocationPercent=this.selectAllocationPercent.bind(this);
 	}
 
 	searchActive( input ){
 		const searchedStock = { "searchedStock": input }
-//		console.log('in searchActive.....',searchedStock);
 		axios.get('/api/stocks/nasdaq/search', { params: searchedStock })
 		.then( res => res.data )
 		.then( nasdaq => {
@@ -48,7 +45,7 @@ class App extends Component{
 
 	filterActive( filter ){
 		let url = '/api/stocks/nasdaq/filter';
-		if( filter.sector.length === 0){
+		if( filter.date.length === 0){
 			url = '/api/stocks/nasdaq';
 		}
 		axios.get(url, { params: filter })
@@ -58,9 +55,9 @@ class App extends Component{
 	}
 
 	componentDidMount(){
-		axios.get('/api/stocks/nasdaq')
+		axios.get('/api/transactions')
 		.then( response => response.data )
-		.then( nasdaq => this.setState( { nasdaq }))
+		.then( transactions => this.setState( { transactions }))
 		.catch( err => console.log( err ))
 	}
 
@@ -113,6 +110,10 @@ class App extends Component{
 		socket.emit('message', msgs);
 	}
 
+	selectAllocationPercent(ev){
+		const selectedAllocation = ev.target.value;
+		this.setState( { selectedAllocation })
+	}
 
 	render(){
 	// console.log('.....in App.js, state, props',this.state, this.props)
@@ -128,11 +129,11 @@ class App extends Component{
 							</div>
 							<div className="col-sm-6">
 							{ Object.keys( this.props ).length > 1 ?
-								<StocksList searchFlag = { this.state.search } reset={ this.reset } nasdaq = { this.state.nasdaq } />
+								<Transactions searchFlag = { this.state.search } reset={ this.reset } transactions = { this.state.transactions } />
 								: <SingleStock router = { this.props.router }/> }
 							</div>
 							<div className="col-sm-4">
-								<MsgBox msgs = { this.state.msgs } onMessageSubmit = { this.onMessageSubmit }  />
+								<InvestorAllocation allocationPercents={ this.state.allocationPercents } selectedAllocation={ this.state.selectedAllocation } selectAllocationPercent={ this.selectAllocationPercent }/>
 							</div>
 						</div>
 				</div>

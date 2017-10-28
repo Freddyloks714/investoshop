@@ -3434,65 +3434,6 @@ module.exports = DOMLazyTree;
 
 /***/ }),
 /* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(225);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(228);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(104);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(230);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(233);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(236);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(238);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(105);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(61);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(244);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(246);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(248);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(249);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3508,7 +3449,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var EventPluginHub = __webpack_require__(27);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(43);
 
 var accumulateInto = __webpack_require__(77);
@@ -3632,7 +3573,7 @@ module.exports = EventPropagators;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3912,7 +3853,7 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3976,7 +3917,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4025,6 +3966,65 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(225);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(228);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(104);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(230);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(233);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(236);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(238);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(105);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(61);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(244);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(246);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(248);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(249);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***/ }),
 /* 30 */
@@ -4732,7 +4732,7 @@ module.exports = TransactionImpl;
 
 
 
-var SyntheticUIEvent = __webpack_require__(28);
+var SyntheticUIEvent = __webpack_require__(27);
 var ViewportMetrics = __webpack_require__(84);
 
 var getEventModifierState = __webpack_require__(47);
@@ -6678,7 +6678,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(15);
-var ReactInstanceMap = __webpack_require__(29);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactUpdates = __webpack_require__(16);
 
@@ -11132,7 +11132,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(215);
 var ReactDOMFeatureFlags = __webpack_require__(216);
 var ReactFeatureFlags = __webpack_require__(81);
-var ReactInstanceMap = __webpack_require__(29);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactMarkupChecksum = __webpack_require__(217);
 var ReactReconciler = __webpack_require__(23);
@@ -13366,7 +13366,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(139);
 
-var _reactRouterDom = __webpack_require__(25);
+var _reactRouterDom = __webpack_require__(29);
 
 var _reactRedux = __webpack_require__(109);
 
@@ -15653,7 +15653,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var FallbackCompositionState = __webpack_require__(144);
 var SyntheticCompositionEvent = __webpack_require__(145);
@@ -16225,8 +16225,8 @@ module.exports = SyntheticInputEvent;
 
 
 
-var EventPluginHub = __webpack_require__(27);
-var EventPropagators = __webpack_require__(26);
+var EventPluginHub = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(16);
@@ -17282,7 +17282,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticMouseEvent = __webpack_require__(36);
 
@@ -18084,7 +18084,7 @@ var DOMLazyTree = __webpack_require__(24);
 var DOMNamespaces = __webpack_require__(49);
 var DOMProperty = __webpack_require__(18);
 var DOMPropertyOperations = __webpack_require__(88);
-var EventPluginHub = __webpack_require__(27);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginRegistry = __webpack_require__(34);
 var ReactBrowserEventEmitter = __webpack_require__(39);
 var ReactDOMComponentFlags = __webpack_require__(76);
@@ -19654,7 +19654,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var EventPluginHub = __webpack_require__(27);
+var EventPluginHub = __webpack_require__(26);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -20387,7 +20387,7 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactComponentEnvironment = __webpack_require__(52);
-var ReactInstanceMap = __webpack_require__(29);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(12);
 
 var ReactCurrentOwner = __webpack_require__(15);
@@ -21002,7 +21002,7 @@ var React = __webpack_require__(21);
 var ReactComponentEnvironment = __webpack_require__(52);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactErrorUtils = __webpack_require__(44);
-var ReactInstanceMap = __webpack_require__(29);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactNodeTypes = __webpack_require__(92);
 var ReactReconciler = __webpack_require__(23);
@@ -23098,7 +23098,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 var DOMProperty = __webpack_require__(18);
-var EventPluginHub = __webpack_require__(27);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(43);
 var ReactComponentEnvironment = __webpack_require__(52);
 var ReactEmptyComponent = __webpack_require__(93);
@@ -24028,7 +24028,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInputSelection = __webpack_require__(97);
@@ -24225,7 +24225,7 @@ module.exports = SelectEventPlugin;
 var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(96);
-var EventPropagators = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticAnimationEvent = __webpack_require__(206);
 var SyntheticClipboardEvent = __webpack_require__(207);
@@ -24236,7 +24236,7 @@ var SyntheticMouseEvent = __webpack_require__(36);
 var SyntheticDragEvent = __webpack_require__(211);
 var SyntheticTouchEvent = __webpack_require__(212);
 var SyntheticTransitionEvent = __webpack_require__(213);
-var SyntheticUIEvent = __webpack_require__(28);
+var SyntheticUIEvent = __webpack_require__(27);
 var SyntheticWheelEvent = __webpack_require__(214);
 
 var emptyFunction = __webpack_require__(11);
@@ -24540,7 +24540,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(28);
+var SyntheticUIEvent = __webpack_require__(27);
 
 /**
  * @interface FocusEvent
@@ -24581,7 +24581,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(28);
+var SyntheticUIEvent = __webpack_require__(27);
 
 var getEventCharCode = __webpack_require__(58);
 var getEventKey = __webpack_require__(210);
@@ -24828,7 +24828,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(28);
+var SyntheticUIEvent = __webpack_require__(27);
 
 var getEventModifierState = __webpack_require__(47);
 
@@ -25168,7 +25168,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInstanceMap = __webpack_require__(29);
+var ReactInstanceMap = __webpack_require__(28);
 
 var getHostComponentFromComposite = __webpack_require__(100);
 var invariant = __webpack_require__(1);
@@ -29739,7 +29739,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(109);
 
-var _reactRouterDom = __webpack_require__(25);
+var _reactRouterDom = __webpack_require__(29);
 
 var _axios = __webpack_require__(67);
 
@@ -29749,9 +29749,9 @@ var _Nav = __webpack_require__(295);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _Main = __webpack_require__(296);
+var _InvestorAllocation = __webpack_require__(305);
 
-var _Main2 = _interopRequireDefault(_Main);
+var _InvestorAllocation2 = _interopRequireDefault(_InvestorAllocation);
 
 var _MsgBox = __webpack_require__(297);
 
@@ -29765,13 +29765,17 @@ var _SearchBar = __webpack_require__(301);
 
 var _SearchBar2 = _interopRequireDefault(_SearchBar);
 
-var _StocksList = __webpack_require__(302);
+var _Transactions = __webpack_require__(303);
 
-var _StocksList2 = _interopRequireDefault(_StocksList);
+var _Transactions2 = _interopRequireDefault(_Transactions);
 
-var _SingleStock = __webpack_require__(303);
+var _SingleStock = __webpack_require__(302);
 
 var _SingleStock2 = _interopRequireDefault(_SingleStock);
+
+var _initialState = __webpack_require__(304);
+
+var _initialState2 = _interopRequireDefault(_initialState);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29796,16 +29800,13 @@ var App = function (_Component) {
 
 		var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
-		_this.state = {
-			msgs: [],
-			nasdaq: [],
-			quote: [],
-			search: ''
-		};
+		_this.state = _initialState2.default;
+
 		_this.reset = _this.reset.bind(_this);
 		_this.searchActive = _this.searchActive.bind(_this);
 		_this.filterActive = _this.filterActive.bind(_this);
 		_this.onMessageSubmit = _this.onMessageSubmit.bind(_this);
+		_this.selectAllocationPercent = _this.selectAllocationPercent.bind(_this);
 		return _this;
 	}
 
@@ -29814,9 +29815,8 @@ var App = function (_Component) {
 		value: function searchActive(input) {
 			var _this2 = this;
 
-			var searchedStock = { "searchedStock": input
-				//		console.log('in searchActive.....',searchedStock);
-			};_axios2.default.get('/api/stocks/nasdaq/search', { params: searchedStock }).then(function (res) {
+			var searchedStock = { "searchedStock": input };
+			_axios2.default.get('/api/stocks/nasdaq/search', { params: searchedStock }).then(function (res) {
 				return res.data;
 			}).then(function (nasdaq) {
 				_this2.setState({ nasdaq: nasdaq });
@@ -29831,7 +29831,7 @@ var App = function (_Component) {
 			var _this3 = this;
 
 			var url = '/api/stocks/nasdaq/filter';
-			if (filter.sector.length === 0) {
+			if (filter.date.length === 0) {
 				url = '/api/stocks/nasdaq';
 			}
 			_axios2.default.get(url, { params: filter }).then(function (res) {
@@ -29847,10 +29847,10 @@ var App = function (_Component) {
 		value: function componentDidMount() {
 			var _this4 = this;
 
-			_axios2.default.get('/api/stocks/nasdaq').then(function (response) {
+			_axios2.default.get('/api/transactions').then(function (response) {
 				return response.data;
-			}).then(function (nasdaq) {
-				return _this4.setState({ nasdaq: nasdaq });
+			}).then(function (transactions) {
+				return _this4.setState({ transactions: transactions });
 			}).catch(function (err) {
 				return console.log(err);
 			});
@@ -29911,6 +29911,12 @@ var App = function (_Component) {
 			socket.emit('message', msgs);
 		}
 	}, {
+		key: 'selectAllocationPercent',
+		value: function selectAllocationPercent(ev) {
+			var selectedAllocation = ev.target.value;
+			this.setState({ selectedAllocation: selectedAllocation });
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			// console.log('.....in App.js, state, props',this.state, this.props)
@@ -29934,12 +29940,12 @@ var App = function (_Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-sm-6' },
-							Object.keys(this.props).length > 1 ? _react2.default.createElement(_StocksList2.default, { searchFlag: this.state.search, reset: this.reset, nasdaq: this.state.nasdaq }) : _react2.default.createElement(_SingleStock2.default, { router: this.props.router })
+							Object.keys(this.props).length > 1 ? _react2.default.createElement(_Transactions2.default, { searchFlag: this.state.search, reset: this.reset, transactions: this.state.transactions }) : _react2.default.createElement(_SingleStock2.default, { router: this.props.router })
 						),
 						_react2.default.createElement(
 							'div',
 							{ className: 'col-sm-4' },
-							_react2.default.createElement(_MsgBox2.default, { msgs: this.state.msgs, onMessageSubmit: this.onMessageSubmit })
+							_react2.default.createElement(_InvestorAllocation2.default, { allocationPercents: this.state.allocationPercents, selectedAllocation: this.state.selectedAllocation, selectAllocationPercent: this.selectAllocationPercent })
 						)
 					)
 				)
@@ -30837,7 +30843,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(25);
+var _reactRouterDom = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30943,93 +30949,7 @@ var Nav = function (_React$Component) {
 exports.default = Nav;
 
 /***/ }),
-/* 296 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(25);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Main = function Main(_ref) {
-	var data = _ref.data;
-
-	//console.log('..............in Main.js', data.data);
-
-	return _react2.default.createElement(
-		'div',
-		null,
-		data.length > 0 && data.map(function (stock, idx) {
-			return _react2.default.createElement(
-				'div',
-				{ key: idx, className: 'panel panel-default' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'panel-heading' },
-					stock.quotes.price.shortName,
-					' ( ',
-					stock.quotes.price.symbol,
-					' )',
-					_react2.default.createElement(
-						'span',
-						{ className: 'pull-right' },
-						'$',
-						stock.quotes.price.regularMarketPrice,
-						_react2.default.createElement(
-							'div',
-							null,
-							parseFloat(stock.quotes.price.regularMarketChange).toFixed(2),
-							' ',
-							'',
-							'(',
-							parseFloat((stock.quotes.price.regularMarketChangePercent * 100).toFixed(2)) + "%",
-							')'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						null,
-						'\xA0'
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'panel-body' },
-					_react2.default.createElement(
-						'div',
-						null,
-						'Ask:',
-						stock.quotes.summaryDetail.ask,
-						' \xA0 x \xA0 ',
-						stock.quotes.summaryDetail.askSize
-					),
-					_react2.default.createElement(
-						'div',
-						null,
-						'Bid: ',
-						stock.quotes.summaryDetail.bid,
-						' \xA0 x \xA0 ',
-						stock.quotes.summaryDetail.bidSize
-					)
-				)
-			);
-		})
-	);
-};
-
-exports.default = Main;
-
-/***/ }),
+/* 296 */,
 /* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31194,7 +31114,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var category = ['Consumer Services', 'Finance', 'Technology', 'Public Utilities', 'Capital Goods', 'Basic Industries', 'Health Care', 'Energy', 'Transportation', 'Miscellaneous', 'Consumer Non-Durables'];
+var category = ['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly'];
 category = category.sort();
 
 var FilterBar = function (_React$Component) {
@@ -31228,7 +31148,7 @@ var FilterBar = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var categories = [{ name: 'sector', title: 'Sector', category: category }];
+      var categories = [{ name: 'date', title: 'Time Period', category: category }];
 
       return _react2.default.createElement(
         'sidebar',
@@ -31446,113 +31366,6 @@ exports.default = SearchBar;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(25);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Transactions = function Transactions(_ref) {
-	var nasdaq = _ref.nasdaq,
-	    searchFlag = _ref.searchFlag,
-	    reset = _ref.reset;
-
-	// console.log('..............in StocksList.js', nasdaq);
-	var total = nasdaq.length;
-
-	return _react2.default.createElement(
-		'div',
-		{ className: 'panel-footer' },
-		_react2.default.createElement(
-			'b',
-			null,
-			'NASDAQ listed stocks: ',
-			_react2.default.createElement(
-				'span',
-				{ className: 'badge badge-info' },
-				' ',
-				total
-			),
-			searchFlag ? _react2.default.createElement(
-				'span',
-				{ className: 'pull-right' },
-				_react2.default.createElement(
-					'button',
-					{ className: 'btn btn-primary', onClick: reset },
-					'Reset'
-				)
-			) : null
-		),
-		_react2.default.createElement(
-			'div',
-			null,
-			'\xA0'
-		),
-		_react2.default.createElement(
-			'div',
-			{ style: { maxHeight: '80vh', overflowY: 'auto' } },
-			nasdaq.length > 0 && nasdaq.map(function (stock, idx) {
-				return _react2.default.createElement(
-					'div',
-					{ key: idx, className: 'panel panel-default' },
-					_react2.default.createElement(
-						'div',
-						{ style: { overflowX: "hidden", overflowY: 'auto' }, className: 'panel-heading' },
-						_react2.default.createElement(
-							_reactRouterDom.Link,
-							{ to: 'api/quote/' + stock.symbol },
-							' ',
-							stock.name,
-							' ( ',
-							stock.symbol,
-							' )'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'panel-body' },
-						_react2.default.createElement(
-							'div',
-							null,
-							'Sector:',
-							stock.sector,
-							' '
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							'Industry: ',
-							stock.industry
-						),
-						_react2.default.createElement(
-							'div',
-							null,
-							'IPO: ',
-							stock.ipo,
-							' '
-						)
-					)
-				);
-			})
-		)
-	);
-};
-
-exports.default = Transactions;
-
-/***/ }),
-/* 303 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -31562,7 +31375,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(25);
+var _reactRouterDom = __webpack_require__(29);
 
 var _axios = __webpack_require__(67);
 
@@ -31723,6 +31536,218 @@ var SingleStock = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SingleStock;
+
+/***/ }),
+/* 303 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(29);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Transactions = function Transactions(_ref) {
+	var transactions = _ref.transactions,
+	    searchFlag = _ref.searchFlag,
+	    reset = _ref.reset;
+
+	var total = transactions.length;
+
+	return _react2.default.createElement(
+		'div',
+		{ className: 'panel-footer' },
+		_react2.default.createElement(
+			'b',
+			null,
+			'Transactions: ',
+			_react2.default.createElement(
+				'span',
+				{ className: 'badge badge-info' },
+				' ',
+				total
+			),
+			searchFlag ? _react2.default.createElement(
+				'span',
+				{ className: 'pull-right' },
+				_react2.default.createElement(
+					'button',
+					{ className: 'btn btn-primary', onClick: reset },
+					'Reset'
+				)
+			) : null
+		),
+		_react2.default.createElement(
+			'div',
+			null,
+			'\xA0'
+		),
+		_react2.default.createElement(
+			'div',
+			{ style: { maxHeight: '80vh', overflowY: 'auto' } },
+			transactions.length > 0 && transactions.map(function (trans, idx) {
+				return _react2.default.createElement(
+					'div',
+					{ key: idx, className: 'panel panel-default' },
+					_react2.default.createElement(
+						'div',
+						{ style: { overflowX: "hidden", overflowY: 'auto' }, className: 'panel-heading' },
+						_react2.default.createElement(
+							_reactRouterDom.Link,
+							{ to: 'api/stock/' + trans.companyName },
+							' ',
+							trans.companyName
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'panel-body' },
+						_react2.default.createElement(
+							'div',
+							null,
+							'Amount: $',
+							trans.amount,
+							' '
+						),
+						_react2.default.createElement(
+							'div',
+							null,
+							'Company Name: ',
+							trans.companyName
+						)
+					)
+				);
+			})
+		)
+	);
+};
+
+exports.default = Transactions;
+
+/***/ }),
+/* 304 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var initialState = {
+  msgs: [],
+  transactions: [],
+  quote: [],
+  search: '',
+  allocationPercents: [1, 5, 10, 20],
+  selectedAllocation: []
+};
+
+exports.default = initialState;
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(29);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var InvestorAllocation = function InvestorAllocation(_ref) {
+	var allocationPercents = _ref.allocationPercents,
+	    selectAllocationPercent = _ref.selectAllocationPercent;
+
+	//console.log('..............in Main.js', data.data);
+
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'div',
+			{ className: 'panel-footer' },
+			_react2.default.createElement(
+				'label',
+				null,
+				_react2.default.createElement(
+					'b',
+					null,
+					'Allocation to my favorite company stock'
+				)
+			),
+			_react2.default.createElement(
+				'div',
+				null,
+				'\xA0'
+			),
+			_react2.default.createElement(
+				'fieldset',
+				null,
+				_react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-xs-3' },
+						_react2.default.createElement(
+							'select',
+							{ className: 'form-control', name: 'percent', onChange: function onChange(ev) {
+									return selectAllocationPercent(ev);
+								} },
+							allocationPercents.length && allocationPercents.map(function (percent, idx) {
+								return _react2.default.createElement(
+									'option',
+									{ key: idx, value: percent },
+									percent,
+									'% '
+								);
+							})
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'col-xs-7' },
+					'of my purchases from the company'
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'form-group' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-xs-2' },
+						_react2.default.createElement(
+							'button',
+							{ type: 'submit', className: 'btn btn-success' },
+							'Submit'
+						)
+					)
+				)
+			)
+		)
+	);
+};
+
+exports.default = InvestorAllocation;
 
 /***/ })
 /******/ ]);

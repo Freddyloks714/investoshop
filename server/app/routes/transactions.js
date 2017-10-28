@@ -6,7 +6,7 @@ const dateFormat = require('dateformat');
 const transactionData = require( '../../../trans.json');
 module.exports = router;
 
-router.get('/transactions', (req, res, next) => {
+router.get('/', (req, res, next) => {
 	res.send( createNewObject( transactionData.transactions ));
 })
 
