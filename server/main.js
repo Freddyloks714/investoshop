@@ -1,6 +1,7 @@
 'use strict';
 
 const server = require('http').createServer();
+const startDb = require('./db');
 
 const createApplication = () => {
 
@@ -28,7 +29,7 @@ const createApplication = () => {
 		})
 
 		socket.on('message',( msgs ) => {
-			
+
 			messages[room].push( msgs );
 			socket.broadcast.emit('message', msgs );
 		})
@@ -48,8 +49,13 @@ const startServer = () => {
 	})
 }
 
-createApplication();
-startServer();
+startDb
+.then(createApplication)
+.then(startServer)
+.catch( err => {
+	console.log( err.stack )
+	process.exit( 1 )
+})
 
 
 

@@ -4,7 +4,7 @@ const SuggestedStocks = ({ companies }) => {
 
   return (
     <div>
-      <h4>Investments you should made:</h4>
+      <h4>Investments you should make:</h4>
         <table>
 					<thead>
 						<tr>
@@ -12,6 +12,7 @@ const SuggestedStocks = ({ companies }) => {
               <th className="size">Shares</th>
               <th className="size">Price</th>
               <th className="size">Exchange Fees</th>
+              <th className="size">Investment Method</th>
               <th className="size">Total Investment</th>
 						</tr>
 
@@ -38,6 +39,14 @@ const SuggestedStocks = ({ companies }) => {
                     { '' }
 									</td>
 
+									<td id={ index } className="item">
+                    <select className="form-contrl">
+                      <option>percent</option>
+                      <option>round change</option>
+                      <option>fixed amount</option>
+                    </select>
+									</td>
+
                   <td id={ index } className="item">
                     { '' }
 									</td>
@@ -51,7 +60,7 @@ const SuggestedStocks = ({ companies }) => {
 					{ companies.length ? (
 						 <tfoot>
 						 	<tr>
-								<td id='tdTotal' colSpan="4"><span className='pull-left'>Total</span></td>
+								<td id='tdTotal' colSpan="5"><span className='pull-left'>Total</span></td>
 								<td>100</td>
 							</tr>
 						 </tfoot>

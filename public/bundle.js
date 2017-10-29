@@ -31785,7 +31785,7 @@ var SuggestedStocks = function SuggestedStocks(_ref) {
 		_react2.default.createElement(
 			"h4",
 			null,
-			"Investments you should made:"
+			"Investments you should make:"
 		),
 		_react2.default.createElement(
 			"table",
@@ -31815,6 +31815,11 @@ var SuggestedStocks = function SuggestedStocks(_ref) {
 						"th",
 						{ className: "size" },
 						"Exchange Fees"
+					),
+					_react2.default.createElement(
+						"th",
+						{ className: "size" },
+						"Investment Method"
 					),
 					_react2.default.createElement(
 						"th",
@@ -31853,6 +31858,29 @@ var SuggestedStocks = function SuggestedStocks(_ref) {
 						_react2.default.createElement(
 							"td",
 							{ id: index, className: "item" },
+							_react2.default.createElement(
+								"select",
+								{ className: "form-contrl" },
+								_react2.default.createElement(
+									"option",
+									null,
+									"percent"
+								),
+								_react2.default.createElement(
+									"option",
+									null,
+									"round change"
+								),
+								_react2.default.createElement(
+									"option",
+									null,
+									"fixed amount"
+								)
+							)
+						),
+						_react2.default.createElement(
+							"td",
+							{ id: index, className: "item" },
 							''
 						)
 					);
@@ -31866,7 +31894,7 @@ var SuggestedStocks = function SuggestedStocks(_ref) {
 					null,
 					_react2.default.createElement(
 						"td",
-						{ id: "tdTotal", colSpan: "4" },
+						{ id: "tdTotal", colSpan: "5" },
 						_react2.default.createElement(
 							"span",
 							{ className: "pull-left" },
