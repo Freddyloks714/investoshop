@@ -6,7 +6,8 @@
   "scripts": {
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "nodemon --ignore dist/ --ignore src/ --ignore browser/ ./server/main.js",
-    "lint": "./node_modules/eslint/bin/eslint.js ./browser"
+    "lint": "./node_modules/eslint/bin/eslint.js ./browser",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js ./browser --fix"
   },
   "keywords": [],
   "author": "",

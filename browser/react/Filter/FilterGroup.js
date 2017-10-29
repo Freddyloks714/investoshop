@@ -1,6 +1,8 @@
 import React from 'react';
 
-const FilterGroup = ({ category, title, catName, modFilter, filter }) => (
+const FilterGroup = ({
+  category, title, catName, modFilter, filter
+}) => (
   <li className="list-group-item" style={{ border: 0 }}>
     <div className="panel-footer">
       <i>Filter by { title }</i>
@@ -8,9 +10,9 @@ const FilterGroup = ({ category, title, catName, modFilter, filter }) => (
     </div>
     <div>&nbsp;</div>
     { category.map((cat, idx) => (
-      <p key={ idx }>
+      <p key={idx}>
         <label>
-          <input type="checkbox" onClick={ () => modFilter({ name: catName, value: cat }) } /> { cat }
+          <input type="checkbox" onClick={() => modFilter({ name: catName, value: cat })} /> { cat }
         </label>
       </p>
     )) }
