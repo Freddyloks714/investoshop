@@ -1,70 +1,69 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const SuggestedStocks = ({ companies }) => (
-  <div>
-    <h4>Investments you should make:</h4>
-    <table>
-      <thead>
-        <tr>
-          <th className="size">Company</th>
-          <th className="size">Shares</th>
-          <th className="size">Price</th>
-          <th className="size">Exchange Fees</th>
-          <th className="size">Investment Method</th>
-          <th className="size">Total Investment</th>
-        </tr>
+class SuggestedStocks extends Component {
 
-      </thead>
+  render(){
+    const { companies, allocationPercents } = this.props;
 
-      <tbody>
-        { companies.length ?
-							companies.map((company, index) => (
-  <tr key={index} >
-    <td className="item">
-      { company.name }
-    </td>
+    return(
+    <div className="panel panel-default"><b>Investments based on your favorite products and services</b>
+        <div>&nbsp;</div>
+        <table>
+          <thead>
+            <tr>
+              <th className="size">Company</th>
+              <th className="size">Investment Method</th>
+              <th className="size">Allocation</th>
+            </tr>
 
-    <td className="item">
-      <input type="text" className="form-control" />
-    </td>
+          </thead>
 
-    <td className="item">
-      { company.price }
-    </td>
+          <tbody>
+            { companies.length ?
+              companies.map((company, index) => (
+              <tr key={index} >
+                <td className="item">
+                  { company.name }
+                </td>
 
-    <td id={index} className="item">
-      { '' }
-    </td>
+                <td id={index} className="item">
+                  <select className="form-control" ref={ node => this.selectVal = node}>
+                    <option value="percent of purchases">percent of purchases</option>
+                    <option>round my change</option>
+                    <option>fixed amount</option>
+                  </select>
+                </td>
 
-    <td id={index} className="item">
-      <select className="form-contrl">
-        <option>percent</option>
-        <option>round change</option>
-        <option>fixed amount</option>
-      </select>
-    </td>
+                <td id={index} className="item">
+                  <select className="form-control" name="percent" >
+                    { allocationPercents.length && allocationPercents.map((percent, idx) => (
+                      <option key={idx} value={percent}>{ percent }% </option>
+                  ))
+                  }
+                  </select>
+                </td>
 
-    <td id={index} className="item">
-      { '' }
-    </td>
+              </tr>
+                  ))
+                : null }
 
-  </tr>
-							))
-						: null }
+          </tbody>
+          { companies.length ? (
+            <tfoot>
+              <tr>
+                <td id="tdTotal" colSpan="3"><span className="pull-left"></span></td>
 
-      </tbody>
-      { companies.length ? (
-        <tfoot>
-          <tr>
-            <td id="tdTotal" colSpan="5"><span className="pull-left">Total</span></td>
-            <td>100</td>
-          </tr>
-        </tfoot>
-					  )
-					   	: null }
+              </tr>
+            </tfoot>
+                )
+                  : null }
 
-    </table>
-  </div>
-);
+        </table>
+      </div>
+
+    )
+  }
+
+}
 
 export default SuggestedStocks;

@@ -3,14 +3,11 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Nav from './Nav';
-import InvestorAllocation from './InvestorAllocation';
-// import MsgBox from './MsgBox';
-// import FilterBar from './Filter/FilterBar';
-// import SearchBar from './SearchBar';
 import Transactions from './Transactions';
 import SingleStock from './SingleStock';
 import initialState from './initialState';
 import SuggestedStocks from './SuggestedStocks';
+import Portfolio from './Portfolio';
 
 const socket = io(window.location.origin);
 let clientIP = '';
@@ -129,10 +126,11 @@ class App extends Component {
             </div>
 
             <div className="col-sm-4">
-              <SuggestedStocks companies={this.state.companies} />
+              <SuggestedStocks companies={this.state.companies} allocationPercents={this.state.allocationPercents} />
             </div>
+
             <div className="col-sm-4">
-              <InvestorAllocation allocationPercents={this.state.allocationPercents} selectedAllocation={this.state.selectedAllocation} selectAllocationPercent={this.selectAllocationPercent} />
+              <Portfolio />
             </div>
 
           </div>
