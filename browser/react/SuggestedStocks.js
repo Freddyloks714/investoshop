@@ -29,14 +29,6 @@ class SuggestedStocks extends Component {
     this.setState( { fixedAmount })
   }
 
-  componentDidMount(){
-    let tempArray = [];
-    for(let i = 0; i < companies.length; i++ ){
-      tempArray.push('percent of purchase');
-    }
-    this.setState( { allocatoinChoice: tempArray } );
-  }
-
   render(){
     const { companies, allocationPercents } = this.props;
     const choice = this.state.allocationChoice;
@@ -72,7 +64,7 @@ class SuggestedStocks extends Component {
 
 
                 <td id={index} className="item">
-                  { choice[index] === 'percent of purchases' ? <PercentPurchase Percents = { allocationPercents } /> : ( choice[index] === 'monthly fixed amount' ? <FixedAmount onFixedAmount={ this.onFixedAmount }/> :  '' ) }
+                  { (!choice.length || choice[index] === 'percent of purchases') ? <PercentPurchase Percents = { allocationPercents } /> : ( choice[index] === 'monthly fixed amount' ? <FixedAmount onFixedAmount={ this.onFixedAmount }/> :  '' ) }
 
                 </td>
 
